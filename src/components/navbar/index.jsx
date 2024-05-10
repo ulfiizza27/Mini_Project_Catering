@@ -55,7 +55,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-end col-span-1">
                     {isLoggedIn ? (
                         <div>
-                            <button onClick={handleSignOut} className="font-inter border border-yellow-500 text-black px-4 py-1 rounded-lg mr-6 hover:bg-yellow-500 hover:text-white font-bold text-base" style={{ cursor: 'pointer' }}>Sign Out</button>
+                            <button onClick={handleSignOut} className="font-inter border border-yellow-500 text-black px-4 py-2 rounded-lg mr-6 hover:bg-yellow-500 hover:text-white font-bold text-base" style={{ cursor: 'pointer' }}>Sign Out</button>
                         </div>
                     ) : (
                         <div>
