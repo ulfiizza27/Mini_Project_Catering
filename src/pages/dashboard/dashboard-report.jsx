@@ -104,7 +104,7 @@ export default function DashboardReport() {
                                 fileName="orders.pdf"
                                 className="inline-block bg-yellow-300 px-4 py-2 rounded text-black font-bold cursor-pointer"
                             >
-                                {({ blob, url, loading, error }) =>
+                                {({ loading }) =>
                                     loading ? 'Loading document...' : 'Print PDF'
                                 }
                             </PDFDownloadLink>

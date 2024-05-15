@@ -13,8 +13,8 @@ export default function About() {
             <div className="grid grid-cols-12 shadow-xl rounded-xl">
                 <div className="col-span-4">
                     <div className="text-left p-10">
-                        <h2 className="text-gray-700 font-bold text-4xl text-left mb-5 font-inter">Experience the Best of <span className="text-[#E5AF10]">CaterIndo</span></h2>
-                        <p className="text-gray-600 mt-3 text-left pb-32 text-lg font-inter">At Caterindo Nusantara, we're dedicated to showcasing the tantalizing flavors and diverse culinary heritage of Indonesia.</p>
+                        <h2 className="text-black font-bold text-4xl text-left font-inter">Experience the Best of <span className="text-[#E5AF10]">CaterIndo</span></h2>
+                        <p className="text-gray-600 pt-5 text-left pb-32 text-lg font-inter">At Caterindo Nusantara, we're dedicated to showcasing the tantalizing flavors and diverse culinary heritage of Indonesia.</p>
                         <button className="bg-[#E5AF10] text-white px-6 py-3 flex items-center justify-center w-full rounded-md shadow-lg font-bold text-lg font-inter">
                             EXPLORE MORE
                             <FontAwesomeIcon icon={faAngleRight} className="ml-2" />

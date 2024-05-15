@@ -283,8 +283,8 @@ export default function Dashboard() {
                                     type="datetime-local"
                                     id="orderDate"
                                     name="orderDate"
-                                    value={formData.orderDate} // Atur nilai dari state formData
-                                    onChange={handleDateChange} // Gunakan fungsi handleDateChange untuk menangani perubahan
+                                    value={formData.orderDate} 
+                                    onChange={handleDateChange} 
                                     className="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
@@ -294,8 +294,8 @@ export default function Dashboard() {
                                     type="datetime-local"
                                     id="pickupDate"
                                     name="pickupDate"
-                                    value={formData.pickupDate} // Atur nilai dari state formData
-                                    onChange={handleDateChange} // Gunakan fungsi handleDateChange untuk menangani perubahan
+                                    value={formData.pickupDate} 
+                                    onChange={handleDateChange} 
                                     className="mt-1 focus:ring-yellow-500 focus:border-yellow-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>

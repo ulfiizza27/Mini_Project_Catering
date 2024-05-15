@@ -4,12 +4,11 @@ import LogoGithub from '../../assets/img/github.png';
 import LogoLinkedin from '../../assets/img/linkedin.png';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Link as ScrollLink } from 'react-scroll';
-
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../assets/img/logo2.png';
 
 export default function Footer() {
     return (
-        <div className='mt-32' style={{ backgroundColor: '#FAEF9B', paddingTop: '2rem' }}>
+        <div className='mt-32' style={{ backgroundColor: '#F1C74E', paddingTop: '2rem' }}>
             <div className="container mx-auto">
             <div className="grid grid-cols-12 gap-4 py-8">
                 <div className="col-span-3 flex items-center">
@@ -59,7 +58,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <hr style={{ backgroundColor: '#C6C6C6' }} />
+            <hr style={{ borderColor: '#C6C6C6' }} />
 
             <p className="text-center text-base py-4 font-inter">@2024 Powered by CaterIndo</p>
         </div>

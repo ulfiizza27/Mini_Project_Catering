@@ -11,7 +11,7 @@ const ChatMessage = ({ message, isUser }) => {
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-4`}>
       <div
         className={`bg-gray-200 p-3 rounded-lg ${
-          isUser ? ' bg-neutral-100 text-gray-800' : 'bg-gray-100 text-gray-700'
+          isUser ? ' bg-[#F3F4F6] text-gray-800' : 'bg-[#D9D9D9] text-gray-700'
         }`}
       >
         <ReactMarkdown>{message}</ReactMarkdown>
@@ -103,7 +103,7 @@ export default function DashboardChatai() {
   return (
     <div className="pt-32 px-4">
       <div className="max-w-lg mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="px-4 py-6 bg-gray-100 border-b border-gray-200">
+        <div className="px-4 py-6 bg-[#FAEF9B] border-b border-gray-200">
           <h2 className="text-xl font-semibold text-gray-800">Chat with AI</h2>
           <p className="text-sm text-gray-600 mt-1">Welcome! How can I assist you today?</p>
         </div>
@@ -113,18 +113,18 @@ export default function DashboardChatai() {
           ))}
           {answerStatus && <div className="text-gray-500 text-center py-2">{answerStatus}</div>}
         </div>
-        <div className="px-4 py-3 bg-gray-100 border-t border-gray-200 flex items-center">
+        <div className="px-4 py-3 bg-[#FAEF9B] border-t border-gray-200 flex items-center">
           <input
             type="text"
             placeholder="Type your message..."
-            className="w-full py-2 px-3 bg-gray-200 focus:outline-none rounded-md"
+            className="w-full py-2 px-3 bg-white focus:outline-none rounded-md"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
           />
           <button
             type="submit"
             onClick={generateAnswer}
-            className="bg-gray-200 p-3 rounded-md hover:bg-gray-400 transition-all duration-300 ml-2 flex items-center"
+            className="bg-white p-3 rounded-md hover:bg-gray-400 transition-all duration-300 ml-2 flex items-center"
             disabled={generatingAnswer}
           >
             <FontAwesomeIcon icon={faPaperPlane} />

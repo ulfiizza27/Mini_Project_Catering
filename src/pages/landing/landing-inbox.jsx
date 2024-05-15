@@ -3,7 +3,7 @@ import Right from '../../assets/img/right.png';
 
 export default function Inbox() {
     return (
-        <div className="container mt-56 mx-auto relative rounded-xl py-20" style={{ backgroundColor: '#FFFAD7'}}>
+        <div className="container mt-56 mx-auto relative rounded-xl py-20" style={{ backgroundColor: '#FAEF9B'}}>
             <img src={Left} alt="Left" className="left-img absolute bottom-0 left-0 w-80" />
             <img src={Right} alt="Right" className="right-img absolute bottom-0 right-0 w-72 rounded-xl" />  
             <div className='px-80'>

@@ -54,11 +54,13 @@ const MyDocument = ({ orders }) => {
                 <Text style={styles.tableCell}>{order.orderDate}</Text>
                 <Text style={styles.tableCell}>{order.pickupDate}</Text>
                 <Text style={styles.tableCell}>{order.quantity}</Text>
-                <Text style={styles.tableCell}>{order.totalPrice}</Text>
+                <Text style={styles.tableCell}>
+                  {new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(order.totalPrice)}
+                </Text>
               </View>
             ))}
           </View>
-          <Text style={styles.totalIncome}>Total Income: Rp. {totalIncome}</Text> 
+          <Text style={styles.totalIncome}>Total Pendapatan: {new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(totalIncome)}</Text>
         </View>
       </Page>
     </Document>

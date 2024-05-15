@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/img/logo.png';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import { signOut } from "firebase/auth"; // Perhatikan perubahan ini
+import { signOut } from "firebase/auth";  
 import { auth } from "../../firebase";
 
 export default function Navbar() {
